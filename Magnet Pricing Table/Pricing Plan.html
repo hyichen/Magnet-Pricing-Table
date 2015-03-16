@@ -2,6 +2,7 @@
 <html> 
 
 <!-- Version 1.0 by Yichen He -->
+<!-- Bootstrap hosted externally @maxcdn -->
 
 <head>
 <!-- Latest compiled and minified CSS -->
@@ -14,6 +15,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
 <style>
+/*Optional to copy style elements into separate CSS. Embedded for project convenience*/
 
 .main-title {
   color: #ffffff;
@@ -23,66 +25,125 @@
 }
 
 .prices {
-  color: #ca2840;
-  /*text-align: center;*/ 
+  color: #ffffff;
   font-size: 300%;
   font-weight: bold;
   display: inline-block;
 }
 
+.btngreen {
+  color: #fff;
+  background-color: #6b8e23 !important;
+  text-transform: uppercase;
+  border: none;
+  text-shadow: none;
+  background: none;
+  padding: 20px;
+  box-shadow: none;
+  margin-left: auto;
+  margin-right: auto; 
+  display: block;
+  /* margin-top: 5%; */
+}
 
+.centered { 
+  display: block;
+  margin-left: auto;
+  margin-right: auto 
+}
+
+.greenlightfill {
+  background-color: #6b8e23;
+  color: #ffffff;
+  text-align: center;
+}
+
+.greendarkfill {
+  background-color: #496709;
+  color: #ffffff;
+  text-align: center;
+}
+
+.greendarkestfill {
+  background-color: #2c4100;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Optional arrowdown
+#triangle-down {
+	width: 0;
+	height: 10;
+	border-left: 100% solid transparent;
+	border-right: 100% solid transparent;
+	border-top: 25px solid green;
+}
+/*
+
+/* old red body header 
 body {
     background-image: url("Background.png");
     background-repeat: no-repeat;
     background-position: center top;
-}
+} 
+/*
+
+/* colourjunk
+#6b8e23 Light Green
+#496709 Darker Green
+#2c4100 Darkest Green
+#0f4571 Blue
+#ca2840 Magnet Red
+?*
 
 </style>
 
 </head>
 
 <body class="lang-eng  " >
+  
+  <br>
 
 <div class="container">
   <div class="col-md-8"> </div>
 
 
-<h2 class="main-title">Magnet Pricing Table</h2>
+<!--- <h2 class="main-title">Magnet Pricing Table</h2> --->
 
 <div class="table-responsiveness">
 <table class="table table-hover">
       <thead>
         <tr>
           <th class="col-md-3"></th>
-          <th class="col-md-3">Free Student Recruiting</th>
-          <th class="col-md-3">Applicant Recruiting </th>
-          <th class="col-md-3">Advanced Applicant Recruiting</th>
+          <th class="col-md-3 greenlightfill"> Free Student Recruiting</th>
+          <th class="col-md-3 greendarkfill">Applicant Recruiting </th>
+          <th class="col-md-3 greendarkestfill">Advanced Applicant Recruiting</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <th scope="row">Pricing</th>
-          <td class="prices">FREE</td>
-          <td> <div class="prices">$9.99</div>/mo.</td>
-          <td> <div class="prices">$9.99</div>/mo. <p>Special Intro Offer </p></td>
+          <td class="greenlightfill">  <div class="prices">FREE</div></td> 
+          <td class="greendarkfill"> <div class="prices">$9.99</div></td>
+          <td class="greendarkestfill"> <div class="prices">$9.99</div><p>Special Intro Offer</p></td>
         </tr>
-        <tr>
+        <tr class="success">
           <th scope="row">Posting is Free</th>
-          <td><img src="Check.png" alt="Included" align="center" width="35" height="35" style="margin-left: 15%"></td>
-          <td><img src="Check.png" alt="Included" align="center" width="35" height="35" style="margin-left: 10%"></td>
-          <td><img src="Check.png" alt="Included" align="center" width="35" height="35" style="margin-left: 13%"></td>
+          <td><img src="CheckSmall.png" alt="Included" align="center" width="20" height="20" class="centered"></td>
+          <td><img src="CheckSmall.png" alt="Included" align="center" width="20" height="20" class="centered"></td>
+          <td><img src="CheckSmall.png" alt="Included" align="center" width="20" height="20" class="centered"></td>
         </tr>
         <tr>
           <th scope="row">Review Top Candidate Applicants for Free</th>
-          <td><img src="Check.png" alt="Included" align="center" width="35" height="35" style="margin-left: 15%"></td>
-          <td><img src="Check.png" alt="Included" align="center" width="35" height="35" style="margin-left: 10%"></td>
-          <td><img src="Check.png" alt="Included" align="center" width="35" height="35" style="margin-left: 13%"></td>
+          <td><img src="CheckSmall.png" alt="Included" align="center" width="20" height="20" class="centered"></td>
+          <td><img src="CheckSmall.png" alt="Included" align="center" width="20" height="20" class="centered"></td>
+          <td><img src="CheckSmall.png" alt="Included" align="center" width="20" height="20" class="centered"></td>
         </tr>
-        <tr>
+        <tr class="success">
           <th scope="row">Use Multi-Media for Promoting Your Jobs</th>
           <td></td>
-          <td><img src="Check.png" alt="Included" align="center" width="35" height="35" style="margin-left: 10%"></td>
-          <td><img src="Check.png" alt="Included" align="center" width="35" height="35" style="margin-left: 13%"></td>
+          <td><img src="CheckSmall.png" alt="Included" align="center" width="20" height="20" class="centered"></td>
+          <td><img src="CheckSmall.png" alt="Included" align="center" width="20" height="20" class="centered"></td>
         </tr>
         <tr>
           <th scope="row">The Talent Pool You Reach</th>
@@ -90,7 +151,7 @@ body {
           <td>All Users</td>
           <td>All Users</td>
         </tr>
-        <tr>
+        <tr class="success">
           <th scope="row">The Applicant Requirements You Can Specify</th>
           <td>
               <p>Education Background</p>
@@ -99,16 +160,13 @@ body {
           <td>
               <p>Education Background</p>
               <p>Target Schools</p>
-              <br>
               <p>Job Experience </p>
           </td>
           <td>
                  <p>Education Background</p>
               <p>Target Schools</p>
-              <br>
               <p>Job Experience</p>
               <p>Personal Qualities</p>
-              <br>
               <p>Specific Experience for:</p>
               <ul>
                   <li>Industry</li>
@@ -135,15 +193,15 @@ body {
           <th scope="row"></th>
           <td> 
               <br>
-              <button type="button" class="btn btn-danger btn-lg">Sign Up</button>
+              <button type="button" class="btngreen">Sign Up</button>
           </td>
           <td>
               <br>
-              <button type="button" class="btn btn-danger btn-lg">Sign Up</button>
+              <button type="button" class="btngreen">Sign Up</button>
           </td>
           <td>
               <br>
-              <button type="button" class="btn btn-danger btn-lg">Sign Up</button>
+              <button type="button" class="btngreen">Sign Up</button>
           </td>
         </tr>
        
@@ -151,6 +209,6 @@ body {
     </table>
     </div>
     </div>
-
+    
 </body>
 </html>
